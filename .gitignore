@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#pdf files
+.pdf
+Wunderflats - Data Scientist - Case Study (1).pdf

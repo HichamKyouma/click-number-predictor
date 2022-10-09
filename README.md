@@ -4,20 +4,20 @@ The purpose of this take home assignment is to predict the number of clicks for 
 
 ## Dataset
 
-● index - Just for reference. To be ignored
-● city - city_id
-● district - district_id
-● min_booking_duration - minimum duration of booking accepted
-● beds - number of beds
-● rooms - number of rooms
-● deposit - amount of deposit
-● area - area of the listing
-● price - price of the listing
-● accomodates - no. of people it accomodates
-● number_of_pics - no. of pics
-● Cleaning_fee
-● first_pic_category
-● clicks[Target/Label] - No. of clicks
+* **index** - Just for reference. To be ignored
+* **city** - city_id
+* **district** - district_id
+* **min_booking_duration** - minimum duration of booking accepted
+* **beds** - number of beds
+* **rooms** - number of rooms
+* **deposit** - amount of deposit
+* **area** - area of the listing
+* **price** - price of the listing
+* **accomodates** - no. of people it accomodates
+* **number_of_pics** - no. of pics
+* **Cleaning_fee**
+* **first_pic_category**
+* **clicks(Target/Label)** - No. of clicks
 
 ## Tasks
 1. Provide an EDA.
