@@ -1,4 +1,3 @@
-# HOWTO: uvicorn app.main:app --host 0.0.0.0 --port 5002 --reload
 from fastapi import FastAPI, Request
 from fastapi.exceptions import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
