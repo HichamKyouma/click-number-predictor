@@ -1,4 +1,3 @@
-"""This file will serve as the main file for the API for industry mapping"""
 # HOWTO: uvicorn app.main:app --host 0.0.0.0 --port 5002 --reload
 from fastapi import FastAPI, Request
 from fastapi.exceptions import HTTPException
@@ -48,7 +47,6 @@ def get_number_of_clicks(item: Item):
         output["district_popularity"] = item.district
     except: 
         raise HTTPException(400, f"Unsupported district code")
-    
 
     pic_category = item.first_pic_category
     if f"first_pic_category_{pic_category}" in output.keys():
@@ -60,11 +58,11 @@ def get_number_of_clicks(item: Item):
     output["deposit_ratio"] = output["deposit"]/output["price"]
     del output["first_pic_category"]
     del output["district"]
-    #prediction_row = np.array(list(output.values())).reshape(-1, 1)
+
     prediction_row = pd.DataFrame(output, index=[0])
-    print(prediction_row)
+    # Using Same Scaler as in Training
     rescaledX = ld.MinMaxScaler.transform(prediction_row)
     X = pd.DataFrame(rescaledX, index=prediction_row.index, columns=prediction_row.columns)
+    # Using the model to predict
     clicks = ld.model_xgb.predict(X)
-    print(clicks)
     return {"clicks" : int(clicks[0])}
