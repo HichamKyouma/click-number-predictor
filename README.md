@@ -28,9 +28,12 @@ modelling.
 
 ## Quick Start
 the project is developped into a REST API to do prediction of clicks based on post Data. 
-
+1. Install Requirements
 ```python
-pip install -r requirements.txt
-
+pip install -r requirements.txt 
+```
+2. Run the API
+Run the API
 ```python
 uvicorn api.main:app --host 0.0.0.0 --port 5002 --reload 
+```
