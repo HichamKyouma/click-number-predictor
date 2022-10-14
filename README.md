@@ -25,3 +25,12 @@ The purpose of this take home assignment is to predict the number of clicks for 
 modelling.
 3. Provide the reasoning behind feature selection and feature engineering.
 4. Show and compare different model performances and pick the most suitable one.
+
+## Quick Start
+the project is developped into a REST API to do prediction of clicks based on post Data. 
+
+```python
+pip install -r requirements.txt
+
+```python
+uvicorn api.main:app --host 0.0.0.0 --port 5002 --reload 
