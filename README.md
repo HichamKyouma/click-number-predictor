@@ -38,4 +38,5 @@ uvicorn api.main:app --host 0.0.0.0 --port 5002 --reload
 ```
 3.Check API Swagger at
 ```python
-localhost:5002/docs```
+localhost:5002/docs
+```
