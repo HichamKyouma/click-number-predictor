@@ -1,6 +1,6 @@
 # click-number-predictor
 
-The purpose of this take home assignment is to predict the number of clicks for every row.
+The purpose of this prject is to predict the number of clicks for every row.
 
 ## Dataset
 
